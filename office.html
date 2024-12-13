@@ -16,10 +16,10 @@
     <header>
       <nav class="navbar bg-body-tertiary">
         <div class="container">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="index.html">
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg"
-              alt="Bootstrap"
+              alt=""
               width="100"
               height="24"
             />
@@ -30,6 +30,39 @@
         </div>
       </nav>
     </header>
+
+    <div class="container">
+      <form>
+        <div class="mb-3">
+          <label for="productName" class="form-label">Name</label>
+          <input type="text" class="form-control" id="inputProductName" />
+        </div>
+        <div class="mb-3">
+          <label for="productDesc" class="form-label">Description</label>
+          <input type="text" class="form-control" id="inputProductDesc" />
+        </div>
+        <div class="mb-3">
+          <label for="productBrand" class="form-label">Brand</label>
+          <input type="text" class="form-control" id="inputProductBrand" />
+        </div>
+        <div class="mb-3">
+          <label for="productImageUrl" class="form-label">Image URL</label>
+          <input type="text" class="form-control" id="inputProductImageUrl" />
+        </div>
+        <div class="mb-3">
+          <label for="productPrice" class="form-label">Price</label>
+          <input type="text" class="form-control" id="inputProductPrice" />
+        </div>
+        <button id="btnDelete" type="button" class="btn btn-danger">
+          Delete
+        </button>
+        <button id="btnCancel" type="reset" class="btn btn-secondary">
+          Cancel
+        </button>
+        <button id="btnAdd" type="button" class="btn btn-primary">Add</button>
+      </form>
+    </div>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

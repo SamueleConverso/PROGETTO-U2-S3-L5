@@ -1,3 +1,7 @@
 nav.navbar {
   background-color: #5e7088 !important;
 }
+
+.prodImg {
+  height: 400px;
+}
