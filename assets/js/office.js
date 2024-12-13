@@ -24,6 +24,7 @@ document.addEventListener("load", init());
 function init() {
   if (productId) {
     btnAdd.innerText = "Modify";
+    btnDelete.style.display = "inline-block";
     getData();
   }
 }
@@ -109,6 +110,7 @@ async function addData() {
         "Content-Type": "application/json",
       },
     });
+    window.location.href = "index.html";
   } catch (error) {
     console.log(error);
   }
@@ -124,6 +126,7 @@ async function modifyData() {
         "Content-Type": "application/json",
       },
     });
+    window.location.href = "index.html";
   } catch (error) {
     console.log(error);
   }
@@ -145,6 +148,7 @@ async function deleteData() {
         Authorization: apiKey,
       },
     });
+    window.location.href = "index.html";
   } catch (error) {
     console.log(error);
   }
