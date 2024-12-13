@@ -14,6 +14,7 @@ const inputProductPrice = document.getElementById("inputProductPrice");
 const btnDelete = document.getElementById("btnDelete");
 const btnCancel = document.getElementById("btnCancel");
 const btnAdd = document.getElementById("btnAdd");
+const btnConfirmDelete = document.getElementById("btnConfirmDelete");
 
 let data;
 let product;
@@ -132,7 +133,7 @@ async function modifyData() {
   }
 }
 
-btnDelete.addEventListener("click", (e) => {
+btnConfirmDelete.addEventListener("click", (e) => {
   e.preventDefault();
   if (productId) {
     deleteData();
