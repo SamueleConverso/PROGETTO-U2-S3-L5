@@ -9,3 +9,10 @@ nav.navbar {
 #pImage {
   height: 400px;
 }
+
+#pPrice {
+  background-color: black;
+  width: fit-content;
+  border-radius: 6px;
+  padding: 3px;
+}
