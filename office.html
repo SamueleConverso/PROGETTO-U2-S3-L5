@@ -32,26 +32,52 @@
     </header>
 
     <div class="container">
+      <p class="h1">MANAGE PRODUCTS</p>
       <form>
         <div class="mb-3">
           <label for="productName" class="form-label">Name</label>
-          <input type="text" class="form-control" id="inputProductName" />
+          <input
+            type="text"
+            class="form-control"
+            id="inputProductName"
+            required
+          />
         </div>
         <div class="mb-3">
           <label for="productDesc" class="form-label">Description</label>
-          <input type="text" class="form-control" id="inputProductDesc" />
+          <input
+            type="text"
+            class="form-control"
+            id="inputProductDesc"
+            required
+          />
         </div>
         <div class="mb-3">
           <label for="productBrand" class="form-label">Brand</label>
-          <input type="text" class="form-control" id="inputProductBrand" />
+          <input
+            type="text"
+            class="form-control"
+            id="inputProductBrand"
+            required
+          />
         </div>
         <div class="mb-3">
           <label for="productImageUrl" class="form-label">Image URL</label>
-          <input type="text" class="form-control" id="inputProductImageUrl" />
+          <input
+            type="text"
+            class="form-control"
+            id="inputProductImageUrl"
+            required
+          />
         </div>
         <div class="mb-3">
           <label for="productPrice" class="form-label">Price</label>
-          <input type="text" class="form-control" id="inputProductPrice" />
+          <input
+            type="text"
+            class="form-control"
+            id="inputProductPrice"
+            required
+          />
         </div>
         <button id="btnDelete" type="button" class="btn btn-danger">
           Delete
@@ -59,7 +85,7 @@
         <button id="btnCancel" type="reset" class="btn btn-secondary">
           Cancel
         </button>
-        <button id="btnAdd" type="button" class="btn btn-primary">Add</button>
+        <button id="btnAdd" type="submit" class="btn btn-primary">Add</button>
       </form>
     </div>
 

@@ -67,18 +67,34 @@ class Product {
 }
 
 btnAdd.addEventListener("click", (e) => {
-  e.preventDefault;
-  let prodName = inputProductName.value;
-  let prodDesc = inputProductDesc.value;
-  let prodBrand = inputProductBrand.value;
-  let prodImageUrl = inputProductImageUrl.value;
-  let prodPrice = inputProductPrice.value;
-  product = new Product(prodName, prodDesc, prodBrand, prodImageUrl, prodPrice);
-  console.log(product);
-  if (!productId) {
-    addData();
+  e.preventDefault();
+  if (
+    inputProductName.value &&
+    inputProductDesc.value &&
+    inputProductBrand.value &&
+    inputProductImageUrl.value &&
+    inputProductPrice.value
+  ) {
+    let prodName = inputProductName.value;
+    let prodDesc = inputProductDesc.value;
+    let prodBrand = inputProductBrand.value;
+    let prodImageUrl = inputProductImageUrl.value;
+    let prodPrice = inputProductPrice.value;
+    product = new Product(
+      prodName,
+      prodDesc,
+      prodBrand,
+      prodImageUrl,
+      prodPrice
+    );
+    console.log(product);
+    if (!productId) {
+      addData();
+    } else {
+      modifyData();
+    }
   } else {
-    modifyData();
+    alert("Devi riempire tutti i campi!");
   }
 });
 
@@ -116,8 +132,8 @@ btnDelete.addEventListener("click", (e) => {
   e.preventDefault();
   if (productId) {
     deleteData();
+    console.log("Cancellato");
   }
-  console.log("Cancellato");
 });
 
 async function deleteData() {
