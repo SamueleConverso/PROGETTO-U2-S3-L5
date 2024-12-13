@@ -23,6 +23,7 @@ document.addEventListener("load", init());
 
 function init() {
   if (productId) {
+    btnAdd.innerText = "Modify";
     getData();
   }
 }
