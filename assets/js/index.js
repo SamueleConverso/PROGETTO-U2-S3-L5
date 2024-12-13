@@ -29,7 +29,7 @@ function init() {
 function printData() {
   for (let i = 0; i < data.length; i++) {
     let cardDiv = document.createElement("div");
-    cardDiv.classList.add("col-3");
+    cardDiv.classList.add("col-4");
     cardDiv.innerHTML = `
     <div class="card" style="width: 18rem;">
   <img src="${data[i].imageUrl}" class="card-img-top prodImg" alt="...">
