@@ -1,9 +1,12 @@
 let endPoint = "https://striveschool-api.herokuapp.com/api/product/";
 let apiKey =
   "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzViZjcxMWQyMjA3MTAwMTVkZTJmM2MiLCJpYXQiOjE3MzQwODAyNzQsImV4cCI6MTczNTI4OTg3NH0.v17yR1ttMjJ502S2x6eTRuGLyGMxouajUcqejbw_Pes";
+
 let data;
 
 const mainRow = document.getElementById("mainRow");
+
+const loadIcon = document.querySelector(".rotate-center");
 
 async function getData() {
   try {
@@ -60,4 +63,5 @@ function printData() {
       window.location.href = newUrl;
     });
   }
+  loadIcon.style.display = "none";
 }
